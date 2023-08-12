@@ -58,4 +58,29 @@ print(torch.randn((3, 4)))
 
 # we can make tensors by supplying exact values for each element by supplying (possibly) nested python list(s)
 # that have numerical literals
+# here we construct a matrix with a list of lists, where hte outermost list corresponds to axis 0
+# and the inner list to axis 1
 print(torch.tensor([[2, 1, 4, 3], [1, 2, 3, 4], [4, 3, 2, 1]]))
+
+# 2.1.2 Indexing and Slicing
+# like python lists, we can access tensor elements by indexing (starting with 0)
+# negative indexing can be used to access element based on its position relative to the end of the list
+# range of indices via slicing (e.g. X[start:stop]) where start is included but stop is excluded
+# for k^th order tensor, if one index (or slice) is specified, it is applied along axis 0
+# X[-1] selects the last row and X[1:3] selects the second and third rows
+print("==========================")
+print("2.1.2 Indexing and Slicing")
+print("==========================")
+print(X)
+print(X[-1], X[1:3])
+
+# we can write to elements of a matrix by specifying indices
+X[1, 2] = 17
+print(X)
+
+# if we want to assign multiple elements the same value, we apply the indexing
+# on the left hand side of the assignment operation
+# e.g. X[:2, :] accesses the first and second row, where : takes all the elements along axis 1 (columns)
+# while we are discussing indexing for matrices, this also works for vectors and for tensors of more than 2 dimensions
+X[:2, :] = 13
+print(X)
