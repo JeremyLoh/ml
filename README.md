@@ -26,6 +26,19 @@ print(torch.cuda.device(current_device))
 print(torch.cuda.get_device_name(current_device))
 ```
 
+## Converting to Fastai image
+https://forums.fast.ai/t/how-to-create-image-with-class-fastai-vision-core-pilimage/82191/1
+```python
+from fastai.vision.core import PILImage
+
+basset_hound_image = PILImage.create("basset_hound_example.jpg")
+print(type(basset_hound_image))
+# basset_hound_image.show()
+
+result = convnext_nano_learner.predict(basset_hound_image)
+print(result)
+```
+
 ## Packages used
 https://d2l.ai/chapter_installation/index.html#installing-the-deep-learning-framework-and-the-d2l-package
 
