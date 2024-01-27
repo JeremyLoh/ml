@@ -1,5 +1,7 @@
-# d2l
+# d2l and fastai learning
 For Dive Into Deep Learning - https://d2l.ai/
+
+Practical Deep Learning Course - https://course.fast.ai/
 
 ## Setup
 A new conda environment was created using steps https://d2l.ai/chapter_installation/index.html#installing-miniconda
@@ -26,7 +28,7 @@ Download using
 ```shell
 curl https://d2l.ai/d2l-en.zip -o d2l-en.zip
 unzip d2l-en.zip && rm d2l-en.zip
-cd pytorch
+cd d2l-pytorch
 ```
 
 If you do not already have unzip installed, first run sudo apt-get install unzip.
