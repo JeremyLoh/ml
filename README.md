@@ -2,12 +2,28 @@
 For Dive Into Deep Learning - https://d2l.ai/
 
 Practical Deep Learning Course - https://course.fast.ai/
+- Book - https://course.fast.ai/Resources/book.html
 
 ## Setup
 A new conda environment was created using steps https://d2l.ai/chapter_installation/index.html#installing-miniconda
 ```shell
 conda create --name d2l python=3.10 -y
 conda activate d2l
+```
+
+## Checking pytorch is using GPU
+- Install pytorch - https://pytorch.org/get-started/locally/
+
+https://stackoverflow.com/questions/48152674/how-do-i-check-if-pytorch-is-using-the-gpu
+```python
+import torch
+
+print(torch.cuda.is_available())
+print(torch.cuda.device_count())
+
+current_device = torch.cuda.current_device()
+print(torch.cuda.device(current_device))
+print(torch.cuda.get_device_name(current_device))
 ```
 
 ## Packages used
