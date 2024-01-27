@@ -1,3 +1,6 @@
 fastai
 fastbook
 jupyter
+torch
+torchvision
+torchaudio
