@@ -1,15 +1,8 @@
 # d2l and fastai learning
-For Dive Into Deep Learning - https://d2l.ai/
 
+# fastai
 Practical Deep Learning Course - https://course.fast.ai/
 - Book - https://course.fast.ai/Resources/book.html
-
-## Setup
-A new conda environment was created using steps https://d2l.ai/chapter_installation/index.html#installing-miniconda
-```shell
-conda create --name d2l python=3.10 -y
-conda activate d2l
-```
 
 ## Checking pytorch is using GPU
 - Install pytorch - https://pytorch.org/get-started/locally/
@@ -37,6 +30,16 @@ print(type(basset_hound_image))
 
 result = convnext_nano_learner.predict(basset_hound_image)
 print(result)
+```
+
+
+# For Dive Into Deep Learning - https://d2l.ai/
+
+## Setup
+A new conda environment was created using steps https://d2l.ai/chapter_installation/index.html#installing-miniconda
+```shell
+conda create --name d2l python=3.10 -y
+conda activate d2l
 ```
 
 ## Packages used
